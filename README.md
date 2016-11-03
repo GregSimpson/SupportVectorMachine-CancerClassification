@@ -16,7 +16,7 @@ Exploratory Data Analysis (EDA), Modeling and Presentation.  The tools are summa
 |Learning Curve|moderate|easy|
 |Ease of Use|excellent|excellent|
 |30 day trial|free|free|
-|1 yr license|god help you|~ $3500/yr|
+|1 yr license|god help you|[~ $12000/yr](https://www.ibm.com/marketplace/cloud/business-intelligence/purchase/us/en-us#product-header-top?lnk=STW_US_THP_T3_TL&lnk2=trial_CogAnalytics)|
 
 
 
@@ -127,6 +127,16 @@ adjustability
 # Cognos Dashboard
 ## Overview
 tbd
+
+Cognos Page
+( https://cognosnext.bi.ibmcloud.com/bi/?perspective=home&context=%7B%22perspective%22%3A%22home%22%2C%22content%22%3A%7B%7D%7D) [IBM Cognos Analytics]
+
+YouTube page
+https://www.youtube.com/playlist?list=PLfj0kQVlOS505-zT_SLDhpAB7CdGtwqdu&cm_mc_uid=64561813362114770127742&cm_mc_sid_50200000=1478184698
+
+Docs
+(http://www-01.ibm.com/support/docview.wss?uid=swg27047187#cbiv11r0m0en) [Cognos Documentation]
+
 
 ## Dataset
 tbd
