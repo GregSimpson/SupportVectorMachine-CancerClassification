@@ -108,7 +108,6 @@ http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
 http://stats.stackexchange.com/questions/168014/where-can-i-read-about-gamma-coefficient-in-svm-in-scikit-learn
 
 
-
 • Linear
 
 • Polynomial
