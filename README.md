@@ -101,10 +101,12 @@ SVM works by mapping data to a high-dimensional feature space so that data point
 [IBM SPSS - SVM Kernel Function](https://www.ibm.com/support/knowledgecenter/SS3RA7_15.0.0/com.ibm.spss.modeler.help/svm_howwork.htm)
 The mathematical function used for the transformation is known as the kernel function. SVM in IBM® SPSS® Modeler supports the following kernel types:
 
+kernel research links
 https://www.quora.com/What-are-C-and-gamma-with-regards-to-a-support-vector-machine
 http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html
 http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
 http://stats.stackexchange.com/questions/168014/where-can-i-read-about-gamma-coefficient-in-svm-in-scikit-learn
+
 
 
 • Linear
