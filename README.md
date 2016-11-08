@@ -1,24 +1,18 @@
 # IBM Watson Tool Exploration
 
-After my experience with Galvanize, I will be joining Truven Health Analytics. http://truvenhealth.com/
+After my experience with Galvanize, I will be joining Truven Health Analytics. 
+http://truvenhealth.com/
 
 Truven has recently been acquired by IBM and is in the process of being integrated into the 
-IBM Watson Health. https://www.ibm.com/watson/health/
+IBM Watson Health group. https://www.ibm.com/watson/health/
 
-So, I have chosen to explore a few of the available IBM tools that are focused in the areas of 
-Exploratory Data Analysis (EDA), Modeling and Presentation.  The tools are summarized below
+Today, I am exploring the IBM SPSS Modeling tool.
+This tool makes fast and easy work of Exploratory Data Analysis (EDA), Modeling and Presentation.
 
-| |IBM SPSS Modeling Tool|IBM Cognos Dashboard|
-|----|:--------------------:|:------------------:|
-|EDA|good|good|
-|Modeling|excellent|fair|
-|Presentation|fair|excellent|
-|Learning Curve|moderate|easy|
-|Ease of Use|excellent|excellent|
-|30 day trial|free|free|
-|1 yr license|god help you|[~ $12000/yr](https://www.ibm.com/marketplace/cloud/business-intelligence/purchase/us/en-us#product-header-top?lnk=STW_US_THP_T3_TL&lnk2=trial_CogAnalytics)|
-
-
+The software name originally stood for Statistical Package for the Social Sciences (SPSS),
+reflecting the original market, although the software is now popular in other fields as 
+well, including the health sciences and marketing.
+(https://en.wikipedia.org/wiki/SPSS)
 
 
 ## Table of Contents
@@ -33,12 +27,6 @@ Exploratory Data Analysis (EDA), Modeling and Presentation.  The tools are summa
 * SPSS Model and Results
 * SPSS Modeler Summary and Review
 
-### Cognos Dashboard
-* Overview
-* Dataset
-* Results
-* Cognos Summary and Review
-
 ---
 
 # SPSS Modeler
@@ -51,6 +39,24 @@ IBM SPSS Modeler offers a variety of modeling methods taken from machine learnin
 
 
 ## Dataset
+
+
+The SVM dataset
+
+http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29
+
+
+The SVM dataset
+
+http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29
+
+http://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data
+
+
+
+
+
+
 
 (This is the preliminary SPSS dataset. I will not be positive on this until I have reviews the Cognos Use Cases)
 
@@ -76,7 +82,6 @@ For the purposes of this example, we're using a dataset that has a relatively sm
 
 
 ## Analysing the Data
-tbd - depends on Cognos Use Case
 screen shots and explanations
 
 ## Support Vector Machines
@@ -96,6 +101,11 @@ SVM works by mapping data to a high-dimensional feature space so that data point
 [IBM SPSS - SVM Kernel Function](https://www.ibm.com/support/knowledgecenter/SS3RA7_15.0.0/com.ibm.spss.modeler.help/svm_howwork.htm)
 The mathematical function used for the transformation is known as the kernel function. SVM in IBM® SPSS® Modeler supports the following kernel types:
 
+https://www.quora.com/What-are-C-and-gamma-with-regards-to-a-support-vector-machine
+http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html
+http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+http://stats.stackexchange.com/questions/168014/where-can-i-read-about-gamma-coefficient-in-svm-in-scikit-learn
+
 • Linear
 
 • Polynomial
@@ -109,13 +119,10 @@ A linear kernel function is recommended when linear separation of the data is st
 
 
 ## SPSS Model and Results
-tbd - depends on Cognos Use Case
 screen shots and explanations
 
 
 ## SPSS Modeler Summary and Review
-
-tbd - depends on Cognos Use Case
 screen shots and explanations
 
 something about time
@@ -124,38 +131,11 @@ adjustability
 
 ---
 
-# Cognos Dashboard
-## Overview
-tbd
-
-Bureau of Trans Stats
-Database Name: Airline On-Time Performance Data
-http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&DB_Short_Name=On-Time
-
-
-Cognos Page
-( https://cognosnext.bi.ibmcloud.com/bi/?perspective=home&context=%7B%22perspective%22%3A%22home%22%2C%22content%22%3A%7B%7D%7D) [IBM Cognos Analytics]
-
-YouTube page
-https://www.youtube.com/playlist?list=PLfj0kQVlOS505-zT_SLDhpAB7CdGtwqdu&cm_mc_uid=64561813362114770127742&cm_mc_sid_50200000=1478184698
-
-Docs
-(http://www-01.ibm.com/support/docview.wss?uid=swg27047187#cbiv11r0m0en) [Cognos Documentation]
-
-
-## Dataset
-tbd
-
-## Results
-tbd
-
-## Cognos Summary and Review
-tbd
-
-
 
 ---
 ## References
+
+(https://www.ibm.com/support/knowledgecenter/en/SS3RA7_18.0.0/modeler_tutorial_ddita/clementine/entities/examples_intro.html) Demo list
 
 (http://www.ibm.com/support/knowledgecenter/SS3RA7_17.0.0/modeler_tutorial_ddita-gentopic1.html)
 (http://www.ibm.com/support/knowledgecenter/en/SS3RA7_17.0.0/clementine/example_adp.html)
