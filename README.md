@@ -1,67 +1,51 @@
 # IBM Watson Tool Exploration
 
+
+<img alt="Basic MRI Workflow" src="images/MRI_workflow.png" width=450>
+<img alt="image missing" src="images/svm-stream-train-test-split.png" width=450>
+
+
+<img src='images/svm-stream-train-test-split.png'>
+<img src='./svm-stream-train-test-split.png'>
+
+<img alt-test="yada yada" src="svm-stream-train-test-split.png">
+
 After my experience with Galvanize, I will be joining Truven Health Analytics. 
 http://truvenhealth.com/
 
 Truven has recently been acquired by IBM and is in the process of being integrated into the 
 IBM Watson Health group. https://www.ibm.com/watson/health/
 
-Today, I am exploring the IBM SPSS Modeling tool.
-This tool makes fast and easy work of Exploratory Data Analysis (EDA), Modeling and Presentation.
-
-The software name originally stood for Statistical Package for the Social Sciences (SPSS),
-reflecting the original market, although the software is now popular in other fields as 
-well, including the health sciences and marketing.
-(https://en.wikipedia.org/wiki/SPSS)
+I chose a topic that would allow me to combine these areas:
+1. Health Care Domain
+2. Data Science
+3. IBM Watson Tools
 
 
 ## Table of Contents
-### SPSS Modeler
-* Overview
-* Dataset
-* Analysing the Data
-* Support Vector Machines
-    * The theory
-    * Hyperplanes  
-    * Kernel Function
-* SPSS Model and Results
-* SPSS Modeler Summary and Review
+1. Health Care Dataset
+    * Breast Cancer Study - Univ of Wisconsin
+2. Data Science
+    * SVM (Support Vector Machines)
+3. IBM Watson Tools
+    * SPSS
+4. Future
+    * Improved Display and Dashboard Functions
 
 ---
+# Health Care DataSet
+<a href="http://cml.ics.uci.edu">
 
-# SPSS Modeler
+<b>Center for Machine Learning and Intelligent Systems</b> 
+<b>Breast Cancer Wisconsin (Original) Data Set</b>
 
-## Overview
-[IBM marketing description](http://www.ibm.com/support/knowledgecenter/SS3RA7_18.0.0/modeler_mainhelp_client_ddita/clementine/entities/clem_family_overview.html)
-IBM SPSS Modeler is a set of data mining tools that enable you to quickly develop predictive models using business expertise and deploy them into business operations to improve decision making. Designed around the industry-standard CRISP-DM model, IBM SPSS Modeler supports the entire data mining process, from data to better business results.
-IBM SPSS Modeler offers a variety of modeling methods taken from machine learning, artificial intelligence, and statistics. The methods available on the Modeling palette allow you to derive new information from your data and to develop predictive models. Each method has certain strengths and is best suited for particular types of problems.
-                    
-
-
-## Dataset
-
-
-The SVM dataset
-
+Publicly available at this link:
 http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29
-
-
-The SVM dataset
-
-http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29
-
 http://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data
 
-
-
-
-
-
-
-(This is the preliminary SPSS dataset. I will not be positive on this until I have reviews the Cognos Use Cases)
-
-The example is based on a dataset that is publicly available from the UCI Machine Learning Repository and was then modified for the SPSS example collection.
-The dataset consists of several hundred human cell sample records, each of which contains the values of a set of cell characteristics. 
+My example uses a dataset that is publicly available from the UCI Machine Learning Repository
+I modified the data set to include column titles.
+The dataset consists of about 700 human cell sample records, each of which contains the values of a set of cell characteristics. 
 The fields in each record are:
 
 |Field name|Description|
@@ -78,15 +62,12 @@ The fields in each record are:
 |Mit|	Mitoses|
 |Class|	Benign or malignant|
 
-For the purposes of this example, we're using a dataset that has a relatively small number of predictors in each record.
+This dataset that has a relatively small number of predictors in each record.
 
 
-## Analysing the Data
-screen shots and explanations
+# Support Vector Machines
 
-## Support Vector Machines
-
-### Theory
+## Theory
 [Wikipedia - Support Vector Machine](https://en.wikipedia.org/wiki/Support_vector_machine) 
 
 An SVM model is a representation of the examples as points in space, mapped so that the examples of the separate categories are divided by a clear gap that is as wide as possible. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall on.
@@ -103,20 +84,73 @@ The mathematical function used for the transformation is known as the kernel fun
 
 kernel research links
 https://www.quora.com/What-are-C-and-gamma-with-regards-to-a-support-vector-machine
-http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html
 http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
 http://stats.stackexchange.com/questions/168014/where-can-i-read-about-gamma-coefficient-in-svm-in-scikit-learn
 
 
 • Linear
+A linear kernel function is recommended when linear separation of the data is straightforward. 
+In other cases, one of the other functions should be used. 
+In my SPSS model, I was able to run each of the available kernels side by side to compare the results.
+They each use different algorithms and parameters.
 
 • Polynomial
 
 • Radial basis function (RBF)
+http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html
+C and Gamma are the parameters for a nonlinear support vector machine (SVM) with a Gaussian radial basis function kernel.
+that allows some examples to be "ignored" or placed on the wrong side of the margin
 
 • Sigmoid
 
-A linear kernel function is recommended when linear separation of the data is straightforward. In other cases, one of the other functions should be used. You will need to experiment with the different functions to obtain the best model in each case, as they each use different algorithms and parameters.
+
+
+
+# SPSS Modeler
+
+Today, I am exploring the IBM SPSS Modeling tool.
+This tool makes fast and easy work of Exploratory Data Analysis (EDA), Modeling and Presentation.
+
+<img src='images/svm-stream-train-test-split.png'>
+
+<img src=images/svm-stream-train-test-split>
+
+
+![alt text](images/svm-stream-train-test-split.png)
+![Alt text](./images/svm-stream-train-test-split.png "Optional title")
+
+The software name originally stood for Statistical Package for the Social Sciences (SPSS),
+reflecting the original market, although the software is now popular in other fields as 
+well, including the health sciences and marketing.
+(https://en.wikipedia.org/wiki/SPSS)
+
+### SPSS Modeler
+* Overview
+* Dataset
+* Analysing the Data
+* Support Vector Machines
+    * The theory
+    * Hyperplanes  
+    * Kernel Function
+* SPSS Model and Results
+* SPSS Modeler Summary and Review
+
+
+
+
+## Overview
+[IBM marketing description](http://www.ibm.com/support/knowledgecenter/SS3RA7_18.0.0/modeler_mainhelp_client_ddita/clementine/entities/clem_family_overview.html)
+IBM SPSS Modeler is a set of data mining tools that enable you to quickly develop predictive models using business expertise and deploy them into business operations to improve decision making. Designed around the industry-standard CRISP-DM model, IBM SPSS Modeler supports the entire data mining process, from data to better business results.
+IBM SPSS Modeler offers a variety of modeling methods taken from machine learning, artificial intelligence, and statistics. The methods available on the Modeling palette allow you to derive new information from your data and to develop predictive models. Each method has certain strengths and is best suited for particular types of problems.
+                    
+<img alt="Basic MRI Workflow" src="images/MRI_workflow.png" width=450>
+
+
+
+# IBM SPSS Modeling Tool
+
+## Analysing the Data
+screen shots and explanations
 
 
 
