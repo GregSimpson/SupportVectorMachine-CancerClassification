@@ -1,20 +1,9 @@
 # IBM Watson Tool Exploration
 
-
-<img alt="Basic MRI Workflow" src="images/MRI_workflow.png" width=450>
-<img alt="image missing" src="images/svm-stream-train-test-split.png" width=450>
-
-
-<img src='images/svm-stream-train-test-split.png'>
-<img src='./svm-stream-train-test-split.png'>
-
-<img alt-test="yada yada" src="svm-stream-train-test-split.png">
-
 After my experience with Galvanize, I will be joining Truven Health Analytics. 
 http://truvenhealth.com/
 
-Truven has recently been acquired by IBM and is in the process of being integrated into the 
-IBM Watson Health group. https://www.ibm.com/watson/health/
+Truven has recently been acquired by IBM and is in the process of being integrated into the IBM Watson Health group. https://www.ibm.com/watson/health/
 
 I chose a topic that would allow me to combine these areas:
 1. Health Care Domain
@@ -108,64 +97,72 @@ that allows some examples to be "ignored" or placed on the wrong side of the mar
 
 # SPSS Modeler
 
-Today, I am exploring the IBM SPSS Modeling tool.
+I explored the IBM SPSS Modeling tool.
 This tool makes fast and easy work of Exploratory Data Analysis (EDA), Modeling and Presentation.
-
-<img src='images/svm-stream-train-test-split.png'>
-
-<img src=images/svm-stream-train-test-split>
-
-
-![alt text](images/svm-stream-train-test-split.png)
-![Alt text](./images/svm-stream-train-test-split.png "Optional title")
+It is icon based and easily configurable within each icon.
 
 The software name originally stood for Statistical Package for the Social Sciences (SPSS),
 reflecting the original market, although the software is now popular in other fields as 
 well, including the health sciences and marketing.
 (https://en.wikipedia.org/wiki/SPSS)
 
-### SPSS Modeler
-* Overview
-* Dataset
-* Analysing the Data
-* Support Vector Machines
-    * The theory
-    * Hyperplanes  
-    * Kernel Function
-* SPSS Model and Results
-* SPSS Modeler Summary and Review
+
+
+The complete stream of my model is:
+
+![main flow](images/svm-stream-train-test-split.png)
+
+
+<b/>
+The main processes( which do not present themselves very clearly) are:
+* data ingestion and manipulation
+* model processing
+* results analysis
+
+The data manipulation phase is covered by the nodes labeled
+
+* "Breast-cancer-wisconsin"
+** loads the raw data and performs any required processing 
+* Partition
+** separates the data into train (65%) test (25%) and validation (10%) data sets
+
+![partition](images/partition-settings.png)
+
+
+<b/>
+The Type icon allows you to define or ignore input and target output fields.
+
+![type](images/Type-definition.png)
+
+
+<b/>
+The kernels that are available are modeled in serial alignment.
+This allows them to append their results to the previous results for later comparison.
+Each SVM instance in this stream implements a different kernel.
+
+Here is the configuration for the Radial Basis Function (rbf) kernel
+![rbf](images/kernel-settings-rbf-gamma.png)
+
+<b/>
+The results are all compared against the included correct result as well as against each other to gauge performance.
+
+
+![final analysis](images/Final-Analysis-1.png)
+
+
+And a ROC curve can be generated to visually see the correctness of the model.
+
+![roc curve](images/ROC-curve.png )
+    
+    
+    
+Results
+<todo>
 
 
 
 
-## Overview
-[IBM marketing description](http://www.ibm.com/support/knowledgecenter/SS3RA7_18.0.0/modeler_mainhelp_client_ddita/clementine/entities/clem_family_overview.html)
-IBM SPSS Modeler is a set of data mining tools that enable you to quickly develop predictive models using business expertise and deploy them into business operations to improve decision making. Designed around the industry-standard CRISP-DM model, IBM SPSS Modeler supports the entire data mining process, from data to better business results.
-IBM SPSS Modeler offers a variety of modeling methods taken from machine learning, artificial intelligence, and statistics. The methods available on the Modeling palette allow you to derive new information from your data and to develop predictive models. Each method has certain strengths and is best suited for particular types of problems.
-                    
-<img alt="Basic MRI Workflow" src="images/MRI_workflow.png" width=450>
 
-
-
-# IBM SPSS Modeling Tool
-
-## Analysing the Data
-screen shots and explanations
-
-
-
-## SPSS Model and Results
-screen shots and explanations
-
-
-## SPSS Modeler Summary and Review
-screen shots and explanations
-
-something about time
-ease of use
-adjustability
-
----
 
 
 ---
