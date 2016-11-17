@@ -28,7 +28,7 @@ I chose a topic that would allow me to combine these areas:
 <b>Center for Machine Learning and Intelligent Systems</b> 
 <b>Breast Cancer Wisconsin (Original) Data Set</b>
 
-Publicly available at this link:
+Publicly available here:
 http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29
 http://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data
 
@@ -71,26 +71,26 @@ SVM works by mapping data to a high-dimensional feature space so that data point
 [IBM SPSS - SVM Kernel Function](https://www.ibm.com/support/knowledgecenter/SS3RA7_15.0.0/com.ibm.spss.modeler.help/svm_howwork.htm)
 The mathematical function used for the transformation is known as the kernel function. SVM in IBM® SPSS® Modeler supports the following kernel types:
 
-kernel research links
-https://www.quora.com/What-are-C-and-gamma-with-regards-to-a-support-vector-machine
-http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
-http://stats.stackexchange.com/questions/168014/where-can-i-read-about-gamma-coefficient-in-svm-in-scikit-learn
-
+In the IBM SPSS Modeling tool, I was able to run each of the available kernels side by side to compare the results.
+They each use different algorithms and parameters.
 
 • Linear
 A linear kernel function is recommended when linear separation of the data is straightforward. 
 In other cases, one of the other functions should be used. 
-In my SPSS model, I was able to run each of the available kernels side by side to compare the results.
-They each use different algorithms and parameters.
+https://www.ibm.com/support/knowledgecenter/SS3RA7_15.0.0/com.ibm.spss.modeler.help/svm_howwork.htm
 
 • Polynomial
+the polynomial kernel looks not only at the given features of input samples to determine their similarity, but also combinations of these.
+https://en.wikipedia.org/wiki/Polynomial_kernel
 
 • Radial basis function (RBF)
-http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html
 C and Gamma are the parameters for a nonlinear support vector machine (SVM) with a Gaussian radial basis function kernel.
 that allows some examples to be "ignored" or placed on the wrong side of the margin
+http://scikit-learn.org/stable/auto_examples/svm/plot_rbf_parameters.html
 
 • Sigmoid
+The Sigmoid Kernel comes from the Neural Networks field, where the bipolar sigmoid function is often used as an activation function for artificial neurons.
+http://crsouza.com/2010/03/17/kernel-functions-for-machine-learning-applications/
 
 
 
@@ -98,6 +98,8 @@ that allows some examples to be "ignored" or placed on the wrong side of the mar
 # SPSS Modeler
 
 I explored the IBM SPSS Modeling tool.
+https://www.ibm.com/support/knowledgecenter/SS3RA7_18.0.0/modeler_mainhelp_client_ddita/clementine/entities/clem_family_overview.html
+
 This tool makes fast and easy work of Exploratory Data Analysis (EDA), Modeling and Presentation.
 It is icon based and easily configurable within each icon.
 
@@ -113,11 +115,11 @@ The complete stream of my model is:
 ![main flow](images/svm-stream-train-test-split.png)
 
 
-<b/>
 The main processes( which do not present themselves very clearly) are:
 * data ingestion and manipulation
 * model processing
 * results analysis
+
 
 The data manipulation phase is covered by the nodes labeled
 
@@ -129,13 +131,13 @@ The data manipulation phase is covered by the nodes labeled
 ![partition](images/partition-settings.png)
 
 
-<b/>
+
 The Type icon allows you to define or ignore input and target output fields.
 
 ![type](images/Type-definition.png)
 
 
-<b/>
+
 The kernels that are available are modeled in serial alignment.
 This allows them to append their results to the previous results for later comparison.
 Each SVM instance in this stream implements a different kernel.
@@ -143,7 +145,7 @@ Each SVM instance in this stream implements a different kernel.
 Here is the configuration for the Radial Basis Function (rbf) kernel
 ![rbf](images/kernel-settings-rbf-gamma.png)
 
-<b/>
+
 The results are all compared against the included correct result as well as against each other to gauge performance.
 
 
@@ -155,13 +157,6 @@ And a ROC curve can be generated to visually see the correctness of the model.
 ![roc curve](images/ROC-curve.png )
     
     
-    
-Results
-<todo>
-
-
-
-
 
 
 
@@ -176,6 +171,10 @@ Results
 (https://en.wikipedia.org/wiki/Support_vector_machine)
 https://www.ibm.com/support/knowledgecenter/SS3RA7_15.0.0/com.ibm.spss.modeler.help/svm_howwork.htm
 
+kernel research links
+https://www.quora.com/What-are-C-and-gamma-with-regards-to-a-support-vector-machine
+http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+http://stats.stackexchange.com/questions/168014/where-can-i-read-about-gamma-coefficient-in-svm-in-scikit-learn
 
 
 
